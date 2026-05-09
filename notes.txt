@@ -1,0 +1,12 @@
+Notes:-
+ObjectId() is a object it feel like it is a function but when we do new ObjectId() it just call the class and it is object now. This help to store 24 bytes as 12 bytes in binary that is 1/2 of actual data.
+
+new ObjectId().string() convert the Object("8192ydahd2r39whf") into "8192ydahd2r39whf" string format
+
+some of property of ObjectId class
+
+ObjectId.isValid("8192ydahd2r39whf") // this will return boolean if the objectId is valid it will return true/ false
+> false
+
+to compare to Object Id mannuly comparing both will always result false as when we create two ID there memory address will different so it will false as per javascript.
+to compare we use new ObjectId("23rasjo3r9032fjkasf").equal(new ObjectId("9324u2r23009rksf3")) // this also return boolean
